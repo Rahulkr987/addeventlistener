@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 2px solid black;
+        height: 300px;
+        width: 300px;
+        background-color: #f0eaea;
+
+    }
+    form{
+        font-size: 20px;
+        padding: 5px 15px;
+        font-weight: 500;
+        
+    }
+    button{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+</style>
+<body>
+    <div class="container"> 
+    <div id="form">
+    <form>
+        
+    <label for="">Name</label>
+    <input type="text"><br>
+    <label for="">Mobile No.</label>
+    <input type="text"><br>
+    <label for="">Email id</label>
+    <input type="email"><br>
+    <button id="button">Submit</button>
+    </form>
+</div>
+    </div>
+</body>
+<script>
+    const buttonElement = document.getElementById("button");
+
+    buttonElement.addEventListener("click", function () {
+  alert("You Really want to submit");
+});
+
+
+</script>
+</html>
